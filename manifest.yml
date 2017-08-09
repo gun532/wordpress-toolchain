@@ -1,6 +1,8 @@
 ---
 applications:
-- memory: 512M
+- name: PHPWordpress
+  memory: 512M
   instances: 1
+  host: phpwordpress-${random-word}
   stack: cflinuxfs2
   buildpack: https://github.com/zendtech/zend-server-php-buildpack-bluemix
